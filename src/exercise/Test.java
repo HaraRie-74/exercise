@@ -1,14 +1,19 @@
 package exercise;
 
 public class Test {
-	
+
 	public static void main(String[] args) {
-		fruit("りんご", 5);
-		fruit("梨", 8);
+		int [] array = {1, 2, 3, 4};
+		arrayTest(array);
+		for (int value : array) {
+			System.out.println(value);
+		}
 	}
-	
-	public static void fruit (String name, int piece) {
-		System.out.println(name + "を" + piece + "個買いました。");
-	}
-	
+
+		public static void arrayTest(int [] array) {
+			for (int i = 0; i < array.length; i++) {
+				array[i] ++;
+			}
+		}
+
 }
